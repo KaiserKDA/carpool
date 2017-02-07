@@ -1,5 +1,5 @@
 <?php
-$request_parts = explode('/', $_GET['url']); // array('users', 'show', 'abc')
+$request_parts = explode('/', $_SERVER['REQUEST_URI']); // array('users', 'show', 'abc')
 include('connect.php');
 
 $output = get_data_from_db(); //Do your processing here
