@@ -1,18 +1,41 @@
 #REST Dokumentation
-##Abrufen von Fahrzeugdaten:
+##Abrufen von Fahrzeugtypen:
+###alle Datensätze
 ```
-rest/KFZ/{KENNZEICHEN}
+rest/GET/TYP
+```
+###einelnen Datensatz
+```
+rest/GET/TYP/{ID}
 ```
 ###Bsp.: 
 ```
-rest/KFZ/KA-MM218
+rest/GET/KFZ/32
+```
+
+##Abrufen von Fahrzeugdaten:
+###alle Datensätze
+```
+rest/GET/KFZ
+```
+###einelnen Datensatz
+```
+rest/GET/KFZ/{KENNZEICHEN}
+```
+###Bsp.: 
+```
+rest/GET/KFZ/KA-MM218
 ```
 
 ##Abrufen von Mitarbeiterdaten:
 ```
-rest/MA/{PERSONALNUMMER}
+rest/GET/MA
+```
+###einelnen Datensatz
+```
+rest/GET/MA/{PERSONALNUMMER}
 ```
 ###Bsp: 
 ```
-rest/MA/678492
+rest/GET/MA/678492
 ```
