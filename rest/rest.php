@@ -1,10 +1,10 @@
 <?php
 $request_parts = explode('/', $_GET['url']); // array('users', 'show', 'abc')
-$file_type     = $_GET['type'];
+include('connect.php');
 
 $output = get_data_from_db(); //Do your processing here
                               //You can outsource to other files via an include/require
-
+$file_type = $_GET['type'];
 //Output based on request
 switch($file_type) {
     case 'json':
