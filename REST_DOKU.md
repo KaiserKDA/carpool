@@ -1,41 +1,38 @@
 #REST Dokumentation
-##Abrufen von Fahrzeugtypen:
-###alle Datensätze
+##Fahrzeugtypen:
+###alle Datensätze abrufen
 ```
-rest/GET/TYP
+GET rest/TYP
 ```
-###einelnen Datensatz
+###einzelnen Datensatz abrufen
 ```
-rest/GET/TYP/{ID}
-```
-###Bsp.: 
-```
-rest/GET/KFZ/32
-```
-
-##Abrufen von Fahrzeugdaten:
-###alle Datensätze
-```
-rest/GET/KFZ
-```
-###einelnen Datensatz
-```
-rest/GET/KFZ/{KENNZEICHEN}
+GET rest/TYP/{ID}
 ```
 ###Bsp.: 
 ```
-rest/GET/KFZ/KA-MM218
+GET rest/TYP/32
 ```
 
-##Abrufen von Mitarbeiterdaten:
+##Fahrzeugdaten:
+###alle Datensätze abrufen
 ```
-rest/GET/MA
+GET rest/KFZ
 ```
-###einelnen Datensatz
+###einzelnen Datensatz abrufen
 ```
-rest/GET/MA/{PERSONALNUMMER}
+GET rest/KFZ/{KENNZEICHEN}
 ```
-###Bsp: 
+###einzelnen Datensatz ändern
 ```
-rest/GET/MA/678492
+PUT rest/KFZ/{KENNZEICHEN}
+json: obj
+```
+###einzelnen Datensatz löschen
+```
+DELETE rest/KFZ/{KENNZEICHEN}
+```
+###Bsp.: 
+```
+GET rest/KFZ/KA-MM218
+DELETE rest/KFZ/KA-MM218
 ```
