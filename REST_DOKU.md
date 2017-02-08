@@ -18,16 +18,21 @@ GET rest/TYP/32
 ```
 GET rest/KFZ
 ```
-###einzelnen Datensatz abrufen
+###Datensatz abrufen
 ```
 GET rest/KFZ/{KENNZEICHEN}
 ```
-###einzelnen Datensatz ändern
+###Datensatz hinzufügen
+```
+PUT rest/KFZ
+json: obj
+```
+###Datensatz ändern
 ```
 PUT rest/KFZ/{KENNZEICHEN}
 json: obj
 ```
-###einzelnen Datensatz löschen
+###Datensatz löschen
 ```
 DELETE rest/KFZ/{KENNZEICHEN}
 ```
