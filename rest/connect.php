@@ -9,6 +9,6 @@
     
     if(mysqli_connect_errno())
     {
-throw new Exception('Verbindung zum MySQL Server fehlgeschlagen: '.mysqli_connect_error());
+        throw new Exception('Verbindung zum MySQL Server fehlgeschlagen: '.mysqli_connect_error());
     }
 ?>
