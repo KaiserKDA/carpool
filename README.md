@@ -2,5 +2,8 @@
 Verwaltung eines Carpools
 
 Gruppenmitglieder
--Kai
--Moritz
+- Kai
+- Moritz
+- David
+
+Link zu unsere WIKI (REST-API): https://github.com/HorstVonMorgen/carpool/wiki
